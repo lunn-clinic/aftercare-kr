@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import PageBanner from "@/components/PageBanner";
 import RedirectShim from "@/components/RedirectShim";
-import { getByTier, getTierMeta } from "@/data/aftercare";
+import { getAllCategories, getByTier, getTierMeta } from "@/data/aftercare";
 import { LANGS, ui, formatCopy } from "@/data/i18n";
 import type { Lang } from "@/data/types";
 
@@ -36,11 +36,111 @@ export default async function TierSelectPage({
   const { lang } = await params;
   if (!LANGS.includes(lang as Lang)) notFound();
   const l = lang as Lang;
-  // 영어/중국어는 tier 선택 화면을 건너뛰고 premium 통합 페이지로 리디렉트
+  // 영어/중국어/일본어는 tier 선택 화면을 건너뛰고 premium 통합 페이지로 리디렉트
   if (UNIFIED_LANGS.includes(l)) {
     return <RedirectShim to={`/${l}/premium`} />;
   }
   const copy = ui[l];
+  // 한국어 /ko/ 는 11종 통합 뷰 (basic/premium 구분 없이 한 화면에)
+  if (l === "ko") {
+    const categories = getAllCategories(l);
+    const totalCount = categories.reduce((n, c) => n + c.items.length, 0);
+    return (
+      <>
+        <PageBanner
+          title={copy.tierUnified}
+          subtitle={copy.tierUnifiedSubtitle}
+          breadcrumb={[{ label: copy.aftercareGuide }]}
+        />
+
+        <section className="py-20 lg:py-28 bg-white">
+          <div className="max-w-[860px] mx-auto px-6 text-center">
+            <p className="text-[10px] tracking-[0.4em] font-bold mb-5 text-primary-navy">
+              AFTERCARE · GUIDE
+            </p>
+            <div className="w-10 h-px mx-auto mb-8 bg-primary-navy" />
+            <h2 className="text-primary-navy text-3xl lg:text-4xl font-extrabold leading-tight mb-6 whitespace-pre-line">
+              {copy.tierUnifiedTagline}
+            </h2>
+            <p className="text-text-secondary text-[15px] leading-[1.9]">
+              {formatCopy(copy.guideCount, totalCount)}
+            </p>
+
+            <div className="flex flex-wrap justify-center gap-2 mt-10">
+              {categories.map((c) => (
+                <a
+                  key={c.key}
+                  href={`#cat-${c.key}`}
+                  className="group inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border-light text-primary-navy text-xs font-semibold hover:border-primary-navy transition-all"
+                >
+                  <span className="w-2 h-2 rounded-full bg-primary-navy" />
+                  {c.name}
+                  <span className="text-text-muted">{c.items.length}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="pb-16 lg:pb-24 bg-bg-warm">
+          <div className="max-w-[1140px] mx-auto px-6 py-16 lg:py-24 space-y-20 lg:space-y-28">
+            {categories.map((cat, catIdx) => (
+              <div key={cat.key} id={`cat-${cat.key}`} className="scroll-mt-24">
+                <div className="flex items-end justify-between gap-6 mb-8 flex-wrap">
+                  <div>
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[10px] font-bold tracking-[0.25em] text-white bg-primary-navy">
+                        {String(catIdx + 1).padStart(2, "0")} · {copy.categoryLabel}
+                      </span>
+                      <span className="text-text-muted text-xs">
+                        {formatCopy(copy.guideCount, cat.items.length)}
+                      </span>
+                    </div>
+                    <h3 className="text-2xl lg:text-[2rem] font-extrabold leading-tight mb-2 text-primary-navy">
+                      {cat.name}
+                    </h3>
+                  </div>
+                  <div className="h-px flex-1 min-w-[100px] mb-4 bg-primary-navy/20" />
+                </div>
+
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-6 lg:p-8 rounded-3xl bg-primary-navy/[0.03]">
+                  {cat.items.map((g) => (
+                    <Link
+                      key={g.slug}
+                      href={`/${l}/${g.tier}/${g.slug}`}
+                      className="block h-full"
+                    >
+                      <div
+                        className="relative h-full bg-white rounded-2xl border-l-[3px] border border-border-light p-6 lg:p-7 transition-all hover:shadow-[0_10px_40px_rgba(22,55,75,0.08)] hover:-translate-y-0.5"
+                        style={{ borderLeftColor: "#16374B" }}
+                      >
+                        <p
+                          className="text-[10px] tracking-[0.25em] font-bold mb-3"
+                          style={{ color: "#16374B" }}
+                        >
+                          AFTERCARE
+                        </p>
+                        <h4 className="text-primary-navy text-xl font-extrabold mb-2.5 leading-tight">
+                          {g.current.procedureName}
+                        </h4>
+                        <p className="text-text-secondary text-[13px] leading-relaxed mb-5">
+                          {g.current.heroLine2}
+                        </p>
+                        <p className="text-xs font-semibold tracking-wide" style={{ color: "#16374B" }}>
+                          {copy.cardGuideCta}
+                        </p>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      </>
+    );
+  }
+
   const basicCount = getByTier(l, "basic").length;
   const premiumCount = getByTier(l, "premium").length;
 

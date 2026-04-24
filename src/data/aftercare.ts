@@ -72,6 +72,35 @@ export function getByTier(
 }
 
 /**
+ * 티어 구분 없이 모든 시술을 카테고리별로 그룹화 (통합 뷰 전용)
+ */
+export function getAllCategories(
+  lang: Lang,
+): Array<{ key: string; name: string; items: Array<Treatment & { current: TreatmentContent }> }> {
+  const list = treatmentMetas.map((m) => ({
+    ...m,
+    content: {
+      ko: contentKo[m.slug],
+      en: contentEn[m.slug],
+      zh: contentZh[m.slug],
+      ja: contentJa[m.slug],
+    },
+    current: byLang[lang][m.slug],
+  }));
+  const groups: Record<string, Array<Treatment & { current: TreatmentContent }>> = {};
+  const order = ["lifting", "injection", "laser", "regeneration"] as const;
+  for (const key of order) groups[key] = [];
+  for (const t of list) groups[t.categoryKey].push(t);
+  return order
+    .filter((key) => groups[key].length > 0)
+    .map((key) => ({
+      key,
+      name: ui[lang].categories[key],
+      items: groups[key],
+    }));
+}
+
+/**
  * tier 내부를 카테고리별로 그룹화
  */
 export function getCategories(
