@@ -49,8 +49,7 @@ export default async function TierSelectPage({
       <>
         <PageBanner
           title={copy.tierUnified}
-          subtitle={copy.tierUnifiedSubtitle}
-          breadcrumb={[{ label: copy.aftercareGuide }]}
+          breadcrumb={[{ label: "시술 후 통합 관리 가이드" }]}
         />
 
         <section className="py-20 lg:py-28 bg-white">
