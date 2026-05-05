@@ -28,6 +28,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -36,8 +37,10 @@ body {
   background: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  word-break: keep-all;
-  overflow-wrap: break-word;
+  word-break: normal;
+  overflow-wrap: anywhere;
+  line-break: auto;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
