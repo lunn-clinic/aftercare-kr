@@ -213,7 +213,7 @@ export default async function AftercareDetailPage({
                           className="flex items-start gap-3 text-sm text-text-primary leading-[1.7]"
                         >
                           <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary-navy shrink-0" />
-                          <span>{item}</span>
+                          <span className="min-w-0 flex-1">{item}</span>
                         </li>
                       ))}
                     </ul>
@@ -229,7 +229,7 @@ export default async function AftercareDetailPage({
                           className="flex items-start gap-3 text-sm text-text-primary leading-[1.7]"
                         >
                           <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent-gold shrink-0" />
-                          <span>{item}</span>
+                          <span className="min-w-0 flex-1">{item}</span>
                         </li>
                       ))}
                     </ul>
@@ -285,7 +285,7 @@ export default async function AftercareDetailPage({
                       />
                     </svg>
                   </span>
-                  <span className="text-text-secondary text-[15px] leading-[1.7] flex-1">
+                  <span className="text-text-secondary text-[15px] leading-[1.7] flex-1 min-w-0">
                     {s}
                   </span>
                 </li>
@@ -309,7 +309,7 @@ export default async function AftercareDetailPage({
                   className="flex items-start gap-4 py-4 first:pt-0 last:pb-0"
                 >
                   <span className="flex-shrink-0 w-5 h-5 rounded border-[1.5px] border-accent-gold/40 mt-0.5" />
-                  <span className="text-text-primary text-[15px] leading-[1.7] flex-1">
+                  <span className="text-text-primary text-[15px] leading-[1.7] flex-1 min-w-0">
                     {s}
                   </span>
                 </li>
