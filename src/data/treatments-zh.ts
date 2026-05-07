@@ -8,10 +8,10 @@ import type { TreatmentContent } from "./types";
  */
 export const contentZh: Record<string, TreatmentContent> = {
   "ulthera": {
-    procedureName: "优适丽提升 (Ulthera)",
+    procedureName: "美版超声刀提升 (Ulthera)",
     device: "Ulthera (HIFU · 聚焦超声)",
     category: "提升·紧致",
-    heroLine1: "Ulthera 术后 90 天护理指南",
+    heroLine1: "美版超声刀术后 90 天护理指南",
     heroLine2: "从术后当天到胶原再生,各阶段需要注意的要点。",
     criticalNotice: {
       label: "最重要的一点",
@@ -24,17 +24,17 @@ export const contentZh: Record<string, TreatmentContent> = {
       {
         when: "术后当天 (0 ~ 24 小时)",
         title: "镇静与保护期",
-        feeling: "轻度刺痛、灼热感及轻微肿胀属正常。",
+        feeling: "轻度刺痛、灼热感及轻微肿胀属正常现象。",
         dos: [
-          "用洁净双手轻涂保湿霜",
-          "使用温水短时洁面",
-          "使用低枕并略微垫高头部入睡",
-          "尽量保持面部静止",
+          "请用干净的手轻轻涂抹保湿产品",
+          "请使用温水简单、快速洗脸",
+          "睡觉时建议用较低的枕头,并稍微抬高头部",
+          "尽量不要触碰或按压脸部",
         ],
         donts: [
-          "禁止热水、桑拿、汗蒸、剧烈运动",
+          "禁止热水洗脸、桑拿、汗蒸及剧烈运动",
           "禁止饮酒、吸烟 (会延缓恢复)",
-          "禁止面部按摩、功能性护肤品",
+          "禁止面部按摩及使用功能性护肤品",
           "尽量避免化妆",
         ],
       },
@@ -43,15 +43,15 @@ export const contentZh: Record<string, TreatmentContent> = {
         title: "轻微肿胀消退期",
         feeling: "面部可能略感沉重,按压时可能有残余酸痛。",
         dos: [
-          "可恢复日常洁面和化妆",
+          "可以像平时一样洗脸和化妆",
           "每日涂抹防晒霜 (SPF 50 PA+++)",
-          "充分补水",
-          "傍晚轻度散步 OK",
+          "请充分补充水分",
+          "晚上可以进行轻度散步",
         ],
         donts: [
-          "禁止面部强压按摩及刮痧",
-          "桑拿、半身浴暂缓",
-          "建议再推迟一次饮酒聚会",
+          "禁止进行会对面部施加强烈压力的按摩或刮痧",
+          "需避免桑拿、半身浴等高温环境",
+          "建议再暂时推迟饮酒聚会",
         ],
       },
       {
@@ -59,29 +59,29 @@ export const contentZh: Record<string, TreatmentContent> = {
         title: "回归日常 + 肤质护理期",
         feeling: "多数轻微反应已消失,皮肤感觉变轻盈。",
         dos: [
-          "运动、桑拿等日常活动均可",
-          "持续补水护肤",
-          "有意识摄入维生素 C·胶原蛋白食物",
-          "如需加强保湿或镇静护理",
+          "可以正常进行运动、桑拿等日常活动",
+          "请持续进行补水保湿护理",
+          "可有意识地摄取含维生素C及胶原蛋白的食物",
+          "如有需要,推荐进行补水加强或舒缓管理护理",
         ],
         donts: [
-          "强酸换肤等项目请推迟约一个月",
-          "极端节食会妨碍胶原合成",
+          "强酸焕肤等项目请推迟约一个月",
+          "过度节食减肥会影响胶原蛋白合成",
         ],
       },
       {
         when: "术后第 1 ~ 3 个月",
         title: "胶原重建期",
         feeling:
-          "照镜子时可感到肤质细腻、轮廓清晰的变化在累积。这一时期是 Ulthera 的核心效果体现。",
+          "照镜子时可感到肤质细腻、轮廓清晰的变化在累积。这一时期是美版超声刀的核心效果体现。",
         dos: [
-          "持续保湿与防晒,直接决定效果",
+          "持续做好保湿与防晒管理,效果会因此产生明显差异",
           "睡前保证充分饮水",
           "有意识摄入蛋白质和维生素 C",
           "预约复诊评估 (通常术后 3 个月)",
         ],
         donts: [
-          "饮酒、吸烟会加速胶原分解",
+          "饮酒和吸烟会加速胶原蛋白流失",
           "睡眠不足也会妨碍效果维持",
         ],
       },
@@ -89,44 +89,44 @@ export const contentZh: Record<string, TreatmentContent> = {
     warningSigns: {
       normal: [
         "术后 1 ~ 3 天的轻微肿胀",
-        "按压时残余酸痛、一过性刺痛",
-        "术后短暂性红斑",
-        "术后 1 ~ 2 周轻度钝痛",
+        "按压时有轻微酸痛感或暂时性刺痛感",
+        "术后短时间出现泛红现象",
+        "术后 1 ~ 2 周内可能有轻微钝痛感",
       ],
       needVisit: [
         "超过 5 天仍未消退的强烈肿胀",
-        "逐渐加重的疼痛或灼热感",
-        "面部某部位麻木超过 1 周",
+        "疼痛或发热感逐渐加重",
+        "面部局部麻木感持续超过 1 周",
         "皮肤出现水疱、脓液、渗液",
-        "面部单侧出现不自然的表情变化",
+        "面部动作出现单侧不自然或不对称情况",
       ],
     },
     synergies: [
       {
         device: "热玛吉 (Thermage)",
-        timing: "Ulthera 术后约 3 ~ 4 周",
-        benefit: "真皮层紧致与肤质改善叠加,效果立体感和持久性累积提升。",
+        timing: "美版超声刀术后约 3 ~ 4 周",
+        benefit: "进一步加强真皮层紧致与肤质改善,使整体效果的立体感与持久性不断累积。",
         reason:
-          "Ulthera 作用于 SMAS 层 (结构),热玛吉作用于真皮层 (质感·弹性)。Ulthera 单独无法填补的表面肤质变化由此阶段补充。",
+          "如果说美版超声刀主要提升的是 SMAS 层 (深层结构),那么热玛吉则主要作用于真皮层 (肤质与弹性)。美版超声刀单独无法填补的表面肤质变化由此阶段补充。",
       },
       {
         device: "水光针 (Skin Booster)",
-        timing: "Ulthera 术后约 2 周",
+        timing: "美版超声刀术后约 2 周",
         benefit: "为恢复中的皮肤补水与营养,使效果更快稳定。",
         reason:
-          "胶原新生阶段,真皮环境越好,效果质量越高。水光针在此阶段起到环境助推作用。",
+          "在胶原蛋白重新生成的时期,真皮层环境越好,最终效果的质量也会越高。水光针 (Skin Booster) 则起到改善并强化这一环境的\"加乘作用\"。",
       },
       {
         device: "线雕提升",
-        timing: "Ulthera 术后约 4 ~ 6 周",
+        timing: "美版超声刀术后约 4 ~ 6 周",
         benefit:
-          "深度下垂者可结合物理线雕提升,Ulthera 在内部支撑线雕提起的轮廓。",
+          "如果同时存在较明显的下垂问题,美版超声刀可以从内部进一步固定并支撑已经被线雕提起的轮廓线条。",
         reason:
-          "线雕提起之后,SMAS 层同步收缩,效果更自然、更持久。适合下垂较深的患者。",
+          "在线雕提升后,若 SMAS 层同时产生收缩作用,整体效果会更加自然且维持更久。这是特别推荐给下垂程度较明显人群的组合方案。",
       },
     ],
     rebookingDesc:
-      "Ulthera 效果通常维持 12 ~ 18 个月。满 1 年时复诊评估,决定是否追加治疗或进入维持方案。",
+      "美版超声刀效果通常维持 12 ~ 18 个月。满 1 年时复诊评估,决定是否追加治疗或进入维持方案。",
   },
 
   "lifting-laser": {
@@ -137,7 +137,7 @@ export const contentZh: Record<string, TreatmentContent> = {
     heroLine2: "术后 3 ~ 4 周内可能出现的反应与恢复管理。",
     criticalNotice: {
       label: "请务必记住",
-      headline: "若出现持续的剧烈疼痛或严重不适,请联系并到院就诊",
+      headline: "若剧烈疼痛或明显不适持续,请联系医院并及时到院检查",
       detail:
         "根据个人肤质,淤青、肿胀、发红可持续 3 ~ 4 周属正常现象。但疼痛逐渐加重时必须到院确认。",
       timing: "术后 ~ 4 周",
@@ -146,45 +146,45 @@ export const contentZh: Record<string, TreatmentContent> = {
       {
         when: "术后当天 ~ 第 1 周",
         title: "镇静·恢复期",
-        feeling: "根据肤质,淤青、肿胀、发红可持续 3 ~ 4 周。",
+        feeling: "根据个人肤质不同,淤青、肿胀及泛红可能持续约 3 ~ 4 周。",
         dos: [
           "术后当天可以化妆",
-          "频繁涂抹保湿霜和修复霜",
-          "外出时必须涂防晒霜",
+          "请随时补涂保湿霜及修复霜",
+          "外出时务必做好防晒",
         ],
         donts: [
-          "避免磨砂膏与去角质",
-          "至少 1 周内避免桑拿、汗蒸、游泳、剧烈运动",
+          "请避免使用磨砂产品及去角质护理",
+          "桑拿、汗蒸、游泳及剧烈运动至少避免 1 周",
         ],
       },
       {
         when: "第 1 ~ 4 周",
         title: "稳定·效果形成期",
-        feeling: "可能出现一过性皮肤问题,经院长诊察后使用药膏或口服药可迅速缓解。",
-        dos: ["持续保湿与防晒"],
+        feeling: "根据皮肤状态,可能暂时出现爆痘等问题。经院长面诊后,通过药膏或口服药物通常可很快改善。",
+        dos: ["持续做好保湿与防晒管理"],
         donts: ["至少 2 周内避免饮酒、吸烟 (血管扩张影响恢复)"],
       },
     ],
     warningSigns: {
-      normal: ["持续 3 ~ 4 周的淤青、肿胀、发红", "术后一过性钝痛"],
+      normal: ["持续 3 ~ 4 周的淤青、肿胀、发红", "术后暂时性钝痛感"],
       needVisit: [
         "持续的剧烈疼痛或严重不适",
-        "面部某部位麻木超过 1 周",
-        "超过预期范围的强烈肿胀持续",
+        "面部局部麻木感持续超过 1 周",
+        "超出正常范围的严重肿胀持续不退",
       ],
     },
     synergies: [
       {
         device: "热玛吉 (协同)",
         timing: "紧致激光术后约 3 ~ 4 周",
-        benefit: "SMAS 层提升 + 真皮层紧致,效果深度与持久性提升一阶。",
-        reason: "不同深度的目标互补,立体感累积。",
+        benefit: "在 SMAS 层提升基础上进一步加强真皮层紧致,使效果的深度与持久性更进一步提升。",
+        reason: "不同层次的作用目标互相补充,整体效果的立体感会更加明显。",
       },
       {
         device: "线雕提升",
         timing: "紧致激光术后约 4 ~ 6 周",
-        benefit: "深度下垂者可结合物理提升与激光效果,轮廓线更清晰。",
-        reason: "线雕提起的轮廓由 SMAS 收缩在内部支撑。",
+        benefit: "若同时存在较深层下垂问题,在物理提拉基础上结合激光效果,可使轮廓线条更加清晰。",
+        reason: "通过埋线提拉的轮廓,再由 SMAS 层收缩从内部进一步支撑固定。",
       },
     ],
     rebookingDesc:
@@ -196,7 +196,7 @@ export const contentZh: Record<string, TreatmentContent> = {
     device: "线雕提升",
     category: "提升·紧致",
     heroLine1: "线雕提升术后护理指南",
-    heroLine2: "异物感与紧绷是自然恢复过程。以下为各阶段注意要点。",
+    heroLine2: "异物感与牵拉感属于自然恢复过程。为您介绍各阶段需要注意的护理事项。",
     criticalNotice: {
       label: "恢复姿势的关键",
       headline: "避免大幅张口、勿趴睡,请以端正姿势入睡",
@@ -208,36 +208,36 @@ export const contentZh: Record<string, TreatmentContent> = {
       {
         when: "术后当天",
         title: "稳定期",
-        feeling: "可能出现淤青、肿胀、红斑。",
+        feeling: "术后可能出现淤青、肿胀及泛红。",
         dos: [
-          "术后当天可轻度清水洁面",
-          "入睡时保持端正仰卧 (不要趴睡)",
+          "术后当天可以简单用清水洗脸",
+          "睡觉时请保持平躺的正确姿势 (不要趴睡)",
         ],
-        donts: ["洁面与化妆建议从次日开始"],
+        donts: ["建议洗脸及化妆从第二天开始进行"],
       },
       {
         when: "第 1 ~ 14 天",
         title: "恢复·注意期",
         feeling:
-          "多数淤青与肿胀在 1 ~ 2 周内消退,个人差异下最长可达 4 周。",
-        dos: ["保持端正仰卧入睡,避免趴睡"],
+          "大多数淤青及肿胀会在 1 ~ 2 周内消退,但根据个人差异,最长可能持续至 4 周。",
+        dos: ["不要趴睡,保持正确睡姿"],
         donts: [
           "至少 1 周内避免饮酒、吸烟、桑拿、汗蒸、游泳、剧烈运动",
-          "1 ~ 2 周内避免过度张口",
+          "请勿过度大幅张口 (持续 1 ~ 2 周)",
         ],
       },
       {
         when: "第 4 ~ 8 周",
         title: "异物感缓解期",
         feeling:
-          "表情、洁面、进食时的异物感、疼痛、紧绷感在 4 ~ 8 周内逐渐缓解,属自然现象。",
-        dos: ["日常表情与饮食均可"],
+          "做表情、洗脸或进食时感受到的异物感、疼痛及牵拉感,会在 4 ~ 8 周内逐渐改善,属于正常恢复现象。",
+        dos: ["可正常做表情及进食"],
         donts: ["即使有异物感,也请勿用手按压或触碰治疗部位"],
       },
     ],
     warningSigns: {
       normal: [
-        "1 ~ 2 周内的淤青、肿胀、红斑 (最长可达 4 周)",
+        "1 ~ 2 周内的淤青、肿胀及泛红 (最长可能持续 4 周)",
         "4 ~ 8 周内的异物感·紧绷感",
       ],
       needVisit: [
@@ -248,33 +248,33 @@ export const contentZh: Record<string, TreatmentContent> = {
     },
     synergies: [
       {
-        device: "Ulthera (提升协同)",
+        device: "美版超声刀 (提升协同)",
         timing: "线雕术后约 4 ~ 6 周",
         benefit: "SMAS 收缩在内部支撑线雕提起的轮廓,效果更自然、更持久。",
-        reason: "结构性提升 (Ulthera) 与物理性提升 (线雕) 互补。",
+        reason: "结构性提升 (美版超声刀) 与物理性提升 (线雕) 互补。",
       },
       {
         device: "水光针",
         timing: "线雕术后约 2 周",
-        benefit: "为恢复中的皮肤补水修复,效果更平滑地稳定。",
-        reason: "真皮环境越好,线周围组织恢复与最终效果越好。",
+        benefit: "为恢复中的肌肤补充水分与修复力,使整体效果更加平滑自然地稳定下来。",
+        reason: "真皮层环境越好,线材周围组织恢复及最终效果质量也会越高。",
       },
     ],
     rebookingDesc:
-      "线雕提升效果通常维持 12 ~ 18 个月。满 1 年复诊评估,决定补强或再次治疗。",
+      "线雕提升的效果通常可维持约 12 ~ 18 个月。建议于 1 年左右进行复诊评估,以决定是否需要加强治疗或重新施作。",
   },
 
   "collagen-volume-bio": {
-    procedureName: "胶原蛋白填充 (少女针·童颜针·塑然雅)",
+    procedureName: "胶原蛋白填充 (JUVELOOK·塑妍萃·艾塑菲)",
     device: "Juvelook · Sculptra · Esthefil",
     category: "注射·填充",
     heroLine1: "胶原蛋白填充术后恢复指南",
-    heroLine2: "从 5-5-5 按摩到硬结预防、恢复阶段的全程管理要点。",
+    heroLine2: "从 \"5-5-5 按摩法\" 到结节预防、恢复时期管理,全部为您详细讲解。",
     criticalNotice: {
-      label: "预防硬结 (结节) 的核心",
+      label: "预防结节 (硬结) 的核心",
       headline: "★ 5-5-5 按摩 — 5 天,每天 5 次,每次 5 分钟 ★",
       detail:
-        "这是预防硬结的核心。充分涂抹保湿霜以减少摩擦,然后轻柔按摩治疗部位。这 5 天的按摩决定了最终的顺滑度。",
+        "这是预防结节的核心。充分涂抹保湿霜以减少摩擦,然后轻柔按摩治疗部位。这 5 天的按摩决定了最终的顺滑度。",
       timing: "术后 5 天",
     },
     timeline: [
@@ -283,9 +283,9 @@ export const contentZh: Record<string, TreatmentContent> = {
         title: "★ 5-5-5 按摩期 (最关键) ★",
         feeling: "术后可能出现一过性淤青或肿胀。",
         dos: [
-          "5-5-5 按摩:5 天内,每天 5 次,每次 5 分钟按摩治疗部位 (预防硬结)",
+          "5-5-5 按摩:5 天内,每天 5 次,每次 5 分钟按摩治疗部位 (预防结节)",
           "为减少摩擦,按摩前充分涂抹保湿霜",
-          "再生胶带保留至次日早晨",
+          "再生贴保留至次日早晨",
           "术后当天可以洁面和化妆",
         ],
         donts: [
@@ -297,9 +297,9 @@ export const contentZh: Record<string, TreatmentContent> = {
         title: "恢复稳定期",
         feeling:
           "可能出现一过性皮肤问题,经院长诊察后使用药膏或口服药可迅速缓解。",
-        dos: ["频繁涂抹保湿·修复霜", "外出时必须涂防晒霜"],
+        dos: ["频繁涂抹保湿·修复霜", "外出时务必做好防晒"],
         donts: [
-          "至少 1 周内避免桑拿、汗蒸、游泳、剧烈运动",
+          "桑拿、汗蒸、游泳及剧烈运动至少避免 1 周",
           "至少 2 周内避免饮酒、吸烟 (血管扩张影响恢复)",
         ],
       },
@@ -307,7 +307,7 @@ export const contentZh: Record<string, TreatmentContent> = {
     warningSigns: {
       normal: ["一过性淤青、肿胀", "治疗部位轻微皮肤问题"],
       needVisit: [
-        "可触及的硬结或伴随疼痛",
+        "可触及的结节或伴随疼痛",
         "5-5-5 按摩后仍持续的不对称或凹凸不平",
         "伴随脓液、渗液、严重灼热的皮肤问题",
       ],
@@ -316,7 +316,7 @@ export const contentZh: Record<string, TreatmentContent> = {
       {
         device: "水光针",
         timing: "胶原蛋白填充术后约 2 ~ 3 周",
-        benefit: "为再生中的皮肤补水与营养,降低硬结风险并提升肤质顺滑度。",
+        benefit: "为再生中的皮肤补水与营养,降低结节风险并提升肤质顺滑度。",
         reason: "胶原活跃合成期的皮肤环境决定最终肤质。",
       },
       {
@@ -335,7 +335,7 @@ export const contentZh: Record<string, TreatmentContent> = {
     device: "肉毒素",
     category: "注射·填充",
     heroLine1: "肉毒素术后恢复指南",
-    heroLine2: "效果显现时间与日常护理方法。",
+    heroLine2: "为您介绍效果出现的时间以及日常护理方法。",
     criticalNotice: {
       label: "请耐心等待效果评估",
       headline: "效果于 1 ~ 2 周后 (身体部位 3 ~ 4 周) 逐渐显现",
@@ -427,7 +427,7 @@ export const contentZh: Record<string, TreatmentContent> = {
         dos: [
           "请按处方服用药物",
           "频繁涂抹保湿·修复霜",
-          "外出时必须涂防晒霜",
+          "外出时务必做好防晒",
           "嘴唇填充术后 1 周内避免吸管、滚烫和刺激性食物",
         ],
         donts: [
@@ -481,10 +481,10 @@ export const contentZh: Record<string, TreatmentContent> = {
     device: "胶原蛋白填充注射",
     category: "注射·填充",
     heroLine1: "胶原蛋白填充术后恢复指南",
-    heroLine2: "从再生胶带管理到恢复阶段,分阶段要点。",
+    heroLine2: "从再生贴的维持护理到恢复时期管理,为您详细说明各个阶段需要注意的事项。",
     criticalNotice: {
       label: "请首先遵守",
-      headline: "再生胶带请保留至次日早晨",
+      headline: "再生贴请保留至次日早晨",
       detail:
         "术后第一个 24 小时对恢复最为关键。过早撕除或强烈刺激会延缓恢复。",
       timing: "术后当天 ~ 次日早晨",
@@ -492,10 +492,10 @@ export const contentZh: Record<string, TreatmentContent> = {
     timeline: [
       {
         when: "术后当天 ~ 次日早晨",
-        title: "再生胶带保留期",
+        title: "再生贴保留期",
         feeling: "术后可能出现一过性淤青或肿胀。",
         dos: [
-          "请将再生胶带保留至次日早晨",
+          "请将再生贴保留至次日早晨",
           "术后当天可以洁面和化妆",
           "频繁涂抹保湿·修复霜",
         ],
@@ -514,7 +514,7 @@ export const contentZh: Record<string, TreatmentContent> = {
           "用保湿·修复霜保护皮肤屏障",
         ],
         donts: [
-          "至少 1 周内避免桑拿、汗蒸、游泳、剧烈运动",
+          "桑拿、汗蒸、游泳及剧烈运动至少避免 1 周",
           "至少 2 周内避免饮酒、吸烟",
         ],
       },
@@ -554,7 +554,7 @@ export const contentZh: Record<string, TreatmentContent> = {
     device: "色素激光 (PicoWay 等)",
     category: "激光",
     heroLine1: "色素激光术后恢复指南",
-    heroLine2: "预防色素沉着与坚持维持治疗决定最终效果。",
+    heroLine2: "预防色素沉着以及持续性的维养治疗,会直接影响最终效果。",
     criticalNotice: {
       label: "防止复发的关键",
       headline: "外出必涂防晒霜,避免长时间紫外线暴露",
@@ -571,7 +571,7 @@ export const contentZh: Record<string, TreatmentContent> = {
           "灼热感持续时建议轻度冷敷",
           "术后当天可以化妆",
           "频繁涂抹保湿·修复霜",
-          "外出时必须涂防晒霜",
+          "外出时务必做好防晒",
         ],
         donts: [
           "避免磨砂膏、去角质",
@@ -584,7 +584,7 @@ export const contentZh: Record<string, TreatmentContent> = {
         feeling: "可能出现一过性皮肤问题。",
         dos: ["外出时每日涂抹防晒霜 (SPF 50 PA+++)"],
         donts: [
-          "至少 1 周内避免桑拿、汗蒸、游泳、剧烈运动",
+          "桑拿、汗蒸、游泳及剧烈运动至少避免 1 周",
           "至少 2 周内避免饮酒、吸烟",
         ],
       },
@@ -620,7 +620,7 @@ export const contentZh: Record<string, TreatmentContent> = {
         reason: "激光击碎的色素需要真皮环境健康才能更好排出。",
       },
       {
-        device: "皮肤护理 (换肤)",
+        device: "皮肤护理 (焕肤)",
         timing: "色素激光术后约 2 ~ 3 周",
         benefit: "整理表皮肤质,帮助色素均匀排出。",
         reason: "微细角质与色素残留被清理后,下次治疗效果更干净。",
@@ -635,10 +635,10 @@ export const contentZh: Record<string, TreatmentContent> = {
     device: "CO2 激光",
     category: "激光",
     heroLine1: "CO2 激光术后恢复指南",
-    heroLine2: "再生胶带保留 1 周是恢复的核心。",
+    heroLine2: "再生贴维持一周是恢复的关键。",
     criticalNotice: {
       label: "决定恢复速度",
-      headline: "再生胶带 (DuoDERM) 保留 1 周,痂皮绝对不可用手撕除",
+      headline: "再生贴 (DuoDERM) 保留 1 周,痂皮绝对不可用手撕除",
       detail:
         "请贴着胶带洁面并充分擦干水分。胶带吸收渗液变白膨胀时请更换。强行撕除痂皮会增加瘢痕和色素沉着风险。",
       timing: "术后 1 周",
@@ -646,10 +646,10 @@ export const contentZh: Record<string, TreatmentContent> = {
     timeline: [
       {
         when: "术后当天 ~ 第 1 周",
-        title: "再生胶带保留期",
+        title: "再生贴保留期",
         feeling: "治疗部位的发红或痂皮属正常皮肤再生过程。",
         dos: [
-          "请保留再生胶带 (DuoDERM 等) 1 周",
+          "请保留再生贴 (DuoDERM 等) 1 周",
           "贴着胶带洁面并充分擦干水分",
           "胶带吸收渗液变白膨胀时请更换",
           "治疗部位较浅或较广时,可能改用再生药膏替代",
@@ -664,7 +664,7 @@ export const contentZh: Record<string, TreatmentContent> = {
         feeling: "治疗部位的发红或痂皮会在 1 ~ 4 周内逐步改善。",
         dos: [
           "频繁涂抹保湿·修复霜",
-          "外出时必须涂防晒霜",
+          "外出时务必做好防晒",
         ],
         donts: [
           "禁止长时间紫外线暴露 (色素沉着风险)",
@@ -687,7 +687,7 @@ export const contentZh: Record<string, TreatmentContent> = {
       needVisit: [
         "超出预期的瘢痕或色素沉着",
         "治疗部位出现脓液、渗液、严重灼热",
-        "再生胶带部位的过敏反应",
+        "再生贴部位的过敏反应",
       ],
     },
     synergies: [
@@ -731,7 +731,7 @@ export const contentZh: Record<string, TreatmentContent> = {
         feeling: "可能出现一过性皮肤问题。",
         dos: [
           "频繁涂抹保湿·修复霜",
-          "外出时必须涂防晒霜",
+          "外出时务必做好防晒",
         ],
         donts: [
           "至少 1 周内避免饮酒、吸烟、桑拿、汗蒸、游泳、剧烈运动",
@@ -764,8 +764,8 @@ export const contentZh: Record<string, TreatmentContent> = {
   },
 
   "skincare": {
-    procedureName: "皮肤护理 (换肤·挤压·消炎针)",
-    device: "换肤·挤压·消炎针",
+    procedureName: "皮肤护理 (焕肤·针清·消炎针)",
+    device: "焕肤·针清·消炎针",
     category: "再生·护理",
     heroLine1: "皮肤护理术后恢复指南",
     heroLine2: "角质与痂皮是自然恢复过程。请勿用手撕除。",
@@ -793,7 +793,7 @@ export const contentZh: Record<string, TreatmentContent> = {
         dos: [
           "浮起的角质请勿用手撕除,请充分涂抹保湿霜让其自然脱落",
           "频繁涂抹保湿·修复霜保护皮肤屏障",
-          "外出时必须涂防晒霜",
+          "外出时务必做好防晒",
         ],
         donts: [
           "禁止强行去除角质·痂皮",

@@ -200,9 +200,9 @@ export const ui: Record<Lang, UICopy> = {
     selfCheckOutro:
       "如符合以上任何一项,请不要独自顾虑,建议尽快就诊朴衡權院长。",
     synergyEyebrow: "协同",
-    synergyHeadline1: "单独也有效果,",
-    synergyHeadline2: "但联合使用会让效果更深入",
-    synergyLead: "按恢复周期设计的组合。请参考下方的时机与依据。",
+    synergyHeadline1: "即使单独进行也有效果,",
+    synergyHeadline2: "但搭配治疗时,效果层次会更加明显",
+    synergyLead: "这是根据恢复周期设计的联合方案。请参考以下的推荐时间与依据。",
     addOn: "+ 追加方案",
     nextVisit: "下次就诊",
     nextVisitMonths: "下次就诊建议 {n} 个月后",
